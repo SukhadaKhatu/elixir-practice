@@ -34,10 +34,6 @@
       <p>Enter String: <%= text_input f, :x %></p>
       <p><%= submit "Check Palindrome" %></p>
     <% end %>
-
-    <p>TODO: Add a form here that checks if a string is a palindrome.</p>
-    <p>INPUT BOX</p>
-    <p>SUBMIT BUTTON</p>
   </div>
 </div>
 
