@@ -1,0 +1,19 @@
+defmodule Practice.Factor do
+ def factor(x) do
+   count = 2
+   list = [x]
+   cal_factor(x, count, list) 
+ end
+                       
+ def cal_factor(x, count, list) when count >= x do
+    list
+ end
+
+ def cal_factor(x, count, list) do
+    if rem(x, count) == 0 do 
+     list ++ [count]
+     x = x / count
+    end
+   cal_factor(x, count + 1, list)
+ end
+ end
