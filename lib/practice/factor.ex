@@ -9,10 +9,16 @@ defmodule Practice.Factor do
   end
 
   def cal_factor(x, list, count) do
+    #IO.puts(rem(x, count))
     if rem(x, count) == 0 do
-      val = trunc(x / count)
+      #IO.puts("check")
+      val = trunc(x /count)
+      #IO.puts(val)
       cal_factor(val, list ++ [count], count)
+      #val = x / count
    else
+    #IO.puts(x)
+    #IO.puts(list)
     cal_factor(x, list, count + 1)
   end
 end
